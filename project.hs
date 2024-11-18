@@ -128,7 +128,7 @@ main = do
     print ( (\x -> "check if Harry Potter is available: " ++ x) <$> check )
 
     let discount = applyMembershipDiscount return2 1 600
-    print $ discount ++ " (original price is 600)"
+    print discount
 
     let activeMembers = fmap (\x -> totalActiveMembers x) return2
     print ( (\x -> "total active members: " ++ show x) <$> activeMembers)
